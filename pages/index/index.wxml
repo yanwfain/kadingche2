@@ -1,0 +1,163 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view class="top_user">
+  <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view>
+  <view class="name_center" bindtap="userFn" wx:if="{{isUser}}">
+  <view class="optic" wx:if="{{op}}"></view>
+    <image src="{{headimg}}"></image>
+    <view class="user_xinxi">
+      <view class="nickName">{{nickName}}</view>
+      <!-- <view style="color: rgb(226, 255, 25);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width:100%;" wx:if="{{!locationadd}}">{{locationName}}</view> -->
+      <!-- <view style="color: rgb(226, 255, 25);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width:100%;"  bindtap="clickFn">{{locationNameadd}}</view> -->
+      <picker class="pick" wx:if="{{locationadd&&!shop_name}}" bindchange="bindPickerChange" value="{{pickerMaterielData[idx].shop_name}}" range="{{ pickerMaterielData }}" range-key="{{'shop_name'}}" data-index="{{index}}" data-obj="{{item}}" data-id="{{id}}">
+        <view wx:if="{{!shop_name}}" class="picker-area-text" style="color: rgb(226, 255, 25);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+            {{pickerMaterielData[idx].shop_name?pickerMaterielData[idx].shop_name:'点击绑定门店'}}
+        </view>
+      </picker>
+        <!-- <view wx:if="{{!shop_name}}"  class="picker-area-text" style="color: rgb(226, 255, 25);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+            {{pickerMaterielData[idx].shop_name?pickerMaterielData[idx].shop_name:'点击绑定门店'}}
+        </view> -->
+      <view bindtap="" style="color: rgb(226, 255, 25);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width:100%;"  wx:if="{{shop_name}}">{{shop_name}}</view>
+ 
+    </view>
+    <!-- <view class="txt_tops">点击头像编辑信息</view> -->
+  </view>
+</view>
+<view class="tab">
+  <view class="tab_toptit top">
+    <view class="one" style="width:10%">排名</view>
+    <view class="two bord" style="width:35%">姓名</view>
+    <view class="two bord" style="width:24%">单圈</view>
+    <!-- <view class="one">LAPS</view> -->
+
+    <!-- <view class="two bord" style="border-right:none; width:15%">圈数</view> -->
+    <view class="two bord" style="width:30%;border-right:none;">达成时间</view>
+    <!-- <view class="two">LAST LAPTIME</view> -->
+  </view>
+  <!-- <view class="tab_toptit top">
+    <view class="one" style="width:10%;color:green">{{rank}}</view>
+    <view class="two bord" style="width:35%;color:green">{{nickName?nickName:'未授权'}}</view>
+    <view class="two bord" style="width:24%;color:green">{{all_tim}}</view>
+
+    <view class="two bord" style="width:30%;border-right:none;color:green">{{create_time}}</view>
+  </view> -->
+  <view class="scrollpod" wx:if="{{movieList &&isUser}}">
+    <block wx:for="{{movieList}}">
+
+
+      <view class="tab_toptit top" style="background:{{item.id==user_id?'green':''}}" data-id="{{item.id}}">
+        <!-- <view class="opslbcg " > -->
+        <view class="one" style="width:10%">{{item.rank}}</view>
+        <view class="two bord" style="width:35%">{{item.user_name}}</view>
+        <view class="two bord" style="width:24%">{{item.all_tim}}</view>
+        <!-- <view class="one">{{item.child_num}}</view> -->
+
+        <!-- <view class="two bord" style="border-right:none;width:15%">{{item.child_num}}</view> -->
+        <view class="two bord" style="width:30%;border-right:none;">{{item.create_time}}</view>
+        <!-- <view class="two">LAST LAPTIME</view> -->
+        <!-- </view> -->
+
+      </view>
+    </block>
+  </view>
+
+</view>
+<view class="gelitops">
+  <image src="../../images/2.png"></image>
+</view>
+<view class="content">
+  <view class="chuzhi" bindtap="chuFn">
+    <view>优惠</view>
+    <image src="../../images/49eb97e61dfb51bf93f56854d0dfa7c.png"></image>
+  </view>
+  <!-- <view class="chuzhi2" bindtap="statusFn">
+   <view>状态</view>
+    <image src="../../images/49eb97e61dfb51bf93f56854d0dfa7c.png"></image>
+  </view> -->
+  <!-- <view class="chuzhi3" bindtap="chuFn">
+     <view>储值</view>
+    <image src="../../images/668f8bacd1887c9eaaad7e6157d007e.png"></image>
+  </view> -->
+  <view class="chuzhi4" bindtap="tueFn">
+    <view>储值</view>
+    <image src="../../images/668f8bacd1887c9eaaad7e6157d007e.png"></image>
+  </view>
+  <view class="imgbac">
+    <image src="../../images/WechatIMG181.png"></image>
+  </view>
+  <!-- <swiper class='shop_swiper' indicator-dots autoplay="true" interval="3000" duration="1000" circular='true' hidden='{{luboActive}}' class='lbImg'>
+    <block wx:for="{{detail}}" wx:key="">
+      <swiper-item class="imgheight">
+        <image src="{{item.img_url}}" class='lbImg' data-id='{{item.id}}' data-id="{{item.id}}" data-activities_id='{{item.activities_id}}' bindtap='goChannel' />
+      </swiper-item>
+    </block>
+
+  </swiper> -->
+</view>
+<!-- <view class="deli_txt">
+  <view class="font_txt">NAME:{{user_name}}</view>
+  <view class="font_txt">LAPS:{{child_num}}</view>
+  <view class="font_txts">BEST LAPTIME</view>
+  <view class="font_txts">{{all_time}}</view>
+</view> -->
+<view class="goupiao" bindtap="goshop">
+  <!-- <view class="iop">
+    <view class="gou">购票</view>
+    <view class="eng" style="margin-top:-2rpx;">TlCHET</view>
+  </view> -->
+
+  <image src="../../images/4cf25601d619140487bb42a1519ad7a.png"></image>
+</view>
+<view style="width:100%;height:100rpx;"></view>
+<view class="Shouquan" wx:if="{{isSiuser}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    您的账号未绑定手机号，点击获取
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">获取 </button>
+  </view>
+  <!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view> -->
+</view>
+<!-- <view class="opsbjc" wx:if="{{isSiuseradd}}" bindtap="ggopfns">
+</view>
+<view class="Shouquan" wx:if="{{isSiuseradd}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    需要获取地理位置信息
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfns">
+      取消
+    </view>
+    <button class="butn_bottys" bindtap="adderFn">获取 </button>
+  </view>
+</view>
+<view class="opsbjc" wx:if="{{isSiuser}}" bindtap="ggopfn">
+</view> -->

@@ -1,0 +1,30 @@
+/* pages/loganmiut/loganmiut.wxss */
+page{
+  background: black;
+}
+.img{
+  position: absolute;
+  top:20%;
+  /* bottom: 0; */
+  width: 60%;
+  height: 500rpx;
+  left: 20%;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.opsdtiap{
+   position: fixed;
+  bottom:20%;
+  /* bottom: 0; */
+  /* width: 60%;
+  height: 500rpx; */
+  width: 20%;
+  left: 40%;
+  color: rgb(225, 255, 55);
+  border-radius:40rpx;
+  border:2rpx solid white;
+  padding: 10rpx;
+  text-align: center;
+}

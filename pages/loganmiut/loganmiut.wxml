@@ -1,0 +1,4 @@
+<view class="img" bindtap="imgFn">
+  <image src="../../images/5df5c4a5b6a35efa66785a86a3fcc8b.png"></image>
+</view>
+<view class="opsdtiap" bindtap="imgFn">跳过 <text style="color:white;">{{num}}</text> </view>        

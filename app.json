@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/loganmiut/loganmiut",
+    "pages/index/index",
+    "pages/sotrtFn-index/sotrtFn-index",
+    "pages/vipFn-index/vipFn-index",
+    "pages/shop/shop",
+    "pages/hexiao-shop/hexiao-shop",
+    "pages/Index-ime/Index-ime",
+    "pages/user-ime/user-ime",
+    "pages/money-ime/money-ime",
+    "pages/lookMx-ime/lookMx-ime",
+    "pages/cji-ime/cji-ime",
+    "pages/delituser-ime/delituser-ime",
+    "pages/alldd-ime/alldd-ime",
+    "pages/allddelit-ime/allddelit-ime",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "black",
+    "enablePullDownRefresh": true,
+    "withShareTicket": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "enablePullDownRefresh": true,
+  "tabBar": {
+    "custom": false,
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "light",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/001.png",
+        "selectedIconPath": "/images/001.png"
+      },
+      {
+        "pagePath": "pages/sotrtFn-index/sotrtFn-index",
+        "text": "排位",
+          "iconPath": "/images/002.png",
+          "selectedIconPath": "/images/002.png"
+    
+      },
+      {
+        "pagePath": "pages/Index-ime/Index-ime",
+        "text": "我的",
+        "iconPath": "/images/003.png",
+        "selectedIconPath": "/images/003.png"
+       
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {}
+
+}

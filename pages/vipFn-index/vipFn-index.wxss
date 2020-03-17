@@ -1,0 +1,236 @@
+/* pages/vipFn-index/vipFn-index.wxss */
+page{
+  background: rgb(226, 255, 25)
+}
+.conetn{
+  padding: 20rpx;
+  background: rgb(226, 255, 25)
+}
+.moey_cont{
+  width: 96%;
+  margin: 0 auto;
+  height: 350rpx;
+  overflow-x: scroll;
+/* white-space: nowrap; */
+  /* margin-top:40rpx; */
+  /* display: flex; */
+  align-items: center;
+  /* flex-wrap: wrap; */
+  position: relative;
+
+}
+.xiao{
+  text-align: center;
+}
+.opsito{
+  position: absolute;
+  width: 0.8%;
+  background: rgb(192, 191, 191);
+  top:0;
+  left: 49.5%;
+  height:700rpx;
+  bottom: 0;
+}
+.dv_cont{
+  width: 96%;
+  /* height: 160rpx; */
+  padding: 4rpx 0;
+  margin: 1% auto;
+  /* margin: 1% 0; */
+  border:6rpx solid black;
+  /* line-height: 160rpx; */
+  text-align: center;
+  background: black;
+}
+.cont{
+  text-align: center;
+  background: #000;
+  width: 45%;
+   height:98%;
+   padding: 20rpx 0;
+   align-items: center;
+  /* margin: 0 auto; */
+  margin: 1%;
+  color: rgb(226, 255, 25);
+}
+.da{
+  /* padding-top:10%; */
+  font-size:36rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.selected{
+  background: white;
+  color: black;
+}
+.moeny{
+  width: 100%;
+   background: white;
+}
+.zhifumoney{
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70rpx;
+  line-height: 70rpx;
+  /* padding: 20rpx; */
+  font-size: 32rpx;
+
+}
+.gochong{
+  width: 40%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  color: white;
+  background: rgb(206, 25, 25);
+  margin: 0 auto;
+  /* margin-top:40rpx;
+  margin-bottom: 100rpx; */
+  position: fixed;
+  left: 30%;
+  bottom: 10%;
+}
+.gochongs{
+  width: 40%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  color: white;
+  background:gray;
+  margin: 0 auto;
+  /* margin-top:40rpx; */
+   position: fixed;
+  left: 30%;
+  bottom: 10%;
+
+
+}
+.Shouquan{
+  position: fixed;
+  top: 30%;
+  z-index: 99;
+  width: 70%;
+  left:15%;
+  right: 15%;
+  padding: 20rpx 0;
+  border-radius: 12rpx;
+  background: rgb(248, 248, 248);
+}
+.titless{
+  width: 100%;
+  text-align: center;
+  /* line-height: 80rpx; */
+
+}
+.cont_tltsops{
+  width: 90%;
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  margin: 0 auto;
+}
+.btn_button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2rpx solid #ccc;
+}
+.quxiao_btn{
+  width: 49%;
+  border-right: 2rpx solid #ccc;
+  line-height: 80rpx;
+  text-align: center;
+}
+.butn_bottys{
+  width: 49%;
+  text-align: center;
+  line-height: 80rpx;
+  color: rgb(41, 121, 41);
+}
+button{
+  border: none;
+}
+button::after{
+
+  border:none;
+
+}
+.getUser{
+  width: 50%;
+  position: absolute;
+  left:0;
+  right: 0;
+  height: 80rpx;
+  background: rgb(20, 141, 20);
+  color: white;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+}
+.opsbjc{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  opacity: .8;
+  background: black;
+}
+.gelitops{
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 50rpx;
+}
+.gelitops image{
+  width: 100%;
+  height: 100%;
+}
+.imgsops{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.opsitos{
+  position: absolute;
+  width: 0.8%;
+  top:0;
+  left:49.5%;
+  bottom: 0;
+  background: rgb(192, 191, 191);
+}
+.imgsops image{
+  width: 48%;
+  height:265rpx; 
+}
+.cont-op{
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: space-between; 
+  align-items: center;
+ flex-wrap: wrap;
+}
+.conts{
+  text-align: center;
+  background: #000;
+  width: 48%;
+   height:98%;
+   padding: 20rpx 0;
+   align-items: center;
+  /* margin: 0 auto; */
+  margin: 1%;
+  color: rgb(226, 255, 25);
+}
+
+

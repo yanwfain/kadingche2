@@ -1,0 +1,164 @@
+/* pages/sotrtFn-index/sotrtFn-index.wxss */
+page{
+  /* width: 160%; */
+  background: black;
+  /* overflow-x: scroll; */
+
+}
+.title_paiwei{
+  width: 100%;
+  text-align: center;
+  font-size: 50rpx;
+  color: white;
+  padding-bottom: 20rpx;
+}
+.tit{
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  color: #fff;
+  background: black;
+  line-height: 60rpx;
+  font-size: 36rpx;
+}
+.tab{
+  padding: 4rpx;
+/* overflow-x: scroll;
+white-space: nowrap; */
+/* width: 130%; */
+
+  /* background: #000; */
+}
+.cont_txt_ui{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+  background: white;
+}
+.tab_toptit{
+  margin-bottom:2%;
+/* white-space: nowrap; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top:1rpx solid rgb(226,255,24); */
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+.imgs_bac{
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.top{
+  /* color:white; */
+}
+.rido_bbb{
+  width: 85%;
+  border-top-left-radius: 100%;
+  background: white;
+}
+.one{
+  width: 13%;
+  /* height: 60rpx; */
+  font-weight: 600;
+  text-align: center;
+  /* line-height: 60rpx; */
+  /* padding-top:10rpx;
+  padding-bottom:10rpx; */
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 40rpx;
+  background: rgb(226, 255, 25);
+  border-top-left-radius:20rpx;
+  border-bottom-left-radius:20rpx;
+}
+.user_heigh{
+  width: 14%;
+  height: 100rpx;
+  border-radius: 100%;
+}
+.user_heigh image{
+  width: 100%;
+  height: 100%;
+   border-radius: 100%;
+}
+.name_user{
+  width:22%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+margin-left:1%
+}
+.name_user_time{
+    line-height: 100rpx;
+  width: 24%;
+  text-align: center;
+  height: 100rpx;
+}
+.name_user_time_creat{
+    line-height: 100rpx;
+  width: 27%;
+  text-align: center;
+  height: 100rpx;
+}
+.bord{
+  border-left:1rpx solid rgb(226,255,24);
+  border-right:1rpx solid rgb(226,255,24);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.two{
+  width: 22%;
+  height:80rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+  position: relative;
+}
+.two image{
+  width: 34rpx;
+  height: 34rpx;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.botm_img{
+  width: 100%;
+  height: 500rpx;
+  margin: 0 auto;
+}
+.botm_img image{
+    width: 100%;
+  height: 500rpx;
+}
+.gelitops{
+  width: 100%;
+  height: 50rpx;
+}
+.gelitops image{
+  width: 100%;
+  height: 100%;
+}

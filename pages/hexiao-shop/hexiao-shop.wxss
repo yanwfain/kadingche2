@@ -1,0 +1,125 @@
+/* pages/hexiao-shop/hexiao-shop.wxss */
+page{
+  background: black;
+}
+.top_titl {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  text-align: center;
+  color: white;
+}
+.top_titls {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: gray;
+}
+.cont {
+  width: 90%;
+  margin: 0 auto;
+  height: 250rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100rpx;
+}
+.use{
+    margin-top: 100rpx;
+    margin-bottom: 20rpx;
+  text-align: center;
+  color: rgb(225, 255, 55);
+}
+.cont_nioer {
+  width: 74%;
+  height: 250rpx;
+  line-height: 250rpx;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 64rpx;
+  margin-right: 2%;
+  border: 2rpx solid rgb(225, 255, 55);
+}
+
+.querleft {
+  width: 22%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border: 3rpx solid black;
+  border-radius: 10rpx;
+  background: rgb(255, 73, 0);
+  color: white;
+}
+
+.contow {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300rpx;
+
+}
+
+.erweima {
+  width: 300rpx;
+  height: 300rpx;
+  border: 2rpx solid rgb(225, 255, 55);
+}
+.erweima image{
+   width: 300rpx;
+  height: 300rpx;
+}
+.qizi {
+  /* margin-top:100rpx; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.qizi image {
+  width: 220rpx;
+  height: 180rpx;
+}
+
+.btn_bottom {
+  width: 80%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top:20rpx;
+  margin-bottom: 100rpx;
+  
+}
+.btn_bottom view{
+  height: 60rpx;
+  width: 40%;
+  text-align: center;
+  line-height: 60rpx;
+  border:3rpx solid rgb(225, 255, 55);
+  border-radius: 10rpx;
+  background: black;
+  color: rgb(225, 255, 55);
+}
+.center_xin{
+  width: 90%;
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* font-size: 26rpx; */
+  margin-top:50rpx;
+  margin: 0 auto;
+  color: rgb(225, 255, 55);
+}
+.center_xin view{
+  margin-left:30%;
+  padding:10rpx 0rpx;
+}

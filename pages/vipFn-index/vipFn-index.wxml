@@ -1,0 +1,67 @@
+<view class="conetn">
+  <view style="width:90%;height:220rpx;margin:0 auto;">
+    <image style="width:100%;height:220rpx;" src="../../images/3.png"></image>
+  </view>
+   <view class="imgsops">
+    <view class="opsitos"></view>
+      <image style=" height:262rpx;"  src="../../images/ee1b56156816873472833c7244dd38d.png"></image>
+      <image style=" height:280rpx;" src="../../images/82e830099187dace2d01094da3090c2.png"></image>
+    </view>
+  <view class="moey_cont">
+  <view class="opsito"></view>
+    <!-- <view class="dv_cont" wx:for="{{detail}}">
+      <view class="cont {{ selected == item.id ? 'selected' : null }}" data-id='{{item.id}}' bindtap="selectSpe">
+        <view class="da">￥{{item.buy_price}}</view>
+      
+        <view class="xiao">{{item.name}}</view>
+      </view>
+    </view> -->
+   
+    <view class="cont-op">
+      <view wx:for="{{detail}}" class="cont {{ selected == item.id ? 'selected' : null }}" data-id='{{item.id}}' bindtap="selectSpe">
+        <view class="da">￥{{item.buy_price}}</view>
+
+        <view class="xiao">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class="moeny" wx:if="{{isShow}}">
+  <view class="zhifumoney">
+    <view>支付金额</view>
+    <view style="color:red">￥{{money}}</view>
+  </view>
+</view> -->
+
+<view class="Shouquan" wx:if="{{isSiuser}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    您还未授权请先授权！
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type="getUserInfo" bindgetuserinfo="getUserInfo">去授权 </button>
+  </view>
+  <!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view> -->
+</view>
+<view class="opsbjc" wx:if="{{isSiuser}}" bindtap="ggopfn">
+</view>
+<!-- <view style="height:200rpx;">
+</view> -->
+<view class="gochong" bindtap="btnCfn" wx:if="{{isFalse}}">
+  确认购买 {{money}}
+</view>
+<view class="gochongs" wx:else>
+  确认购买 {{money}}
+</view>
+<view class="gelitops">
+  <image src="../../images/2.png"></image>
+</view>

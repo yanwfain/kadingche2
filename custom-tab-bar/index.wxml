@@ -1,0 +1,10 @@
+<view class="tab-bar">
+  <view class="tab-bar-border"></view>
+  <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+  
+     <view style="font-size:30rpx;padding-bottom:10rpx;font-weight:600;color: {{selected === index ? selectedColor : color}} ">{{item.text}}</view>
+  <view style="width: 100%;height: 2rpx;background: rgb(225, 255, 55);marign:10rpx 0;" class="border"></view>
+    <image src="{{selected === index ? item.selectedIconPath : item.iconPath}} "></image> 
+ 
+  </view>
+</view>

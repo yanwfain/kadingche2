@@ -1,0 +1,129 @@
+<view class="top"></view>
+<view class="content" bindtap="chekoed1" data-id="1" data-moneygren="{{moneygren}}">
+
+  <view class="cont">
+    
+    <view class="cont_title">
+    <image class="img_1" src="../../images/ee1b56156816873472833c7244dd38d.png"></image>
+      <view>单人单次</view>
+  
+    </view>
+    <view class="right_money_riod">
+      <view class="txt">￥{{moneygren}}</view>
+      <view class="ridos">
+        <view class="iop">
+          <view class="gou">购票</view>
+          <view class="eng">TlCHET</view>
+        </view>
+        <image src="../../images/9d77e75699c8de2034703ed96441f1d.png" wx:if="{{!isShowched}}"></image>
+        <image src="../../images/d6c034ea2e42f71ab7dfd57434da73f.png" wx:else></image>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="gelitops">
+    <image src="../../images/2.png"></image>
+  </view>
+</view>
+<view class="content" bindtap="chekoed2" data-id="2" data-moneygqin="{{moneygqin}}">
+
+  <view class="cont">
+    <view class="cont_title">
+    <image class="img_1" src="../../images/82e830099187dace2d01094da3090c2.png"></image>
+    <view>亲子单次</view>  
+    </view>
+    <view class="right_money_riod">
+      <view class="txt">￥{{moneygqin}}</view>
+      <view class="ridos">
+        <view class="iop">
+          <view class="gou">购票</view>
+          <view class="eng">TlCHET</view>
+        </view>
+        <image src="../../images/9d77e75699c8de2034703ed96441f1d.png" wx:if="{{!isShowched1}}"></image>
+        <image src="../../images/d6c034ea2e42f71ab7dfd57434da73f.png" wx:else></image>
+
+      </view>
+    </view>
+
+  </view>
+
+  <view class="gelitops">
+    <image src="../../images/2.png"></image>
+  </view>
+</view>
+<!-- <view class="goShop" bindtap="onemoney">首单免费</view> -->
+<!-- <view class="goShop" wx:if="{{is_status}}" bindtap="goSumpot">
+  立即购买
+</view> -->
+<button class="goShop" wx:if="{{is_status}}" bindtap="goSumpot" >立即购买</button>
+<!-- <view class="goShops" wx:else>
+  立即购买
+</view> -->
+
+<!-- wx:if="{{isGuan}}" -->
+<view class="isFlone" bindtap="guanfn" wx:if="{{isGuan}}">
+</view>
+<view class="isbottom" wx:if="{{isGuan}}">
+  <view class="tits">支付</view>
+  <view class="setxt">
+    支付方式：
+  </view>
+  <radio-group bindchange="ycfp">
+    <view class="zhifu_box" bindtap="riods">
+      <view class="left">
+        <view class="zhifu_img">
+          <image src="../../images/weix.png"></image>
+        </view>
+        <view>微信支付</view>
+      </view>
+      <radio bindtap="riods" checked="{{ridos === '1' ? 'true' : ''}}" value="1"></radio>
+    </view>
+    <view class="zhifu_box" bindtap="riods1">
+      <view class="left" >
+        <view class="zhifu_img">
+          <image src="../../images/11595e6e93e9d1da01c39d1b5654148.png"></image>
+        </view>
+        <view style="">余额支付 </view>
+        <view style="color:red;font-size:24rpx;margin-left:1%;">({{all_price}})</view>
+      </view>
+      <radio checked="{{ridos === '2' ? 'true' : ''}}" value="2"></radio>
+    </view>
+    <!-- <view class="zhifu_box">
+      <view class="left">
+        <view class="zhifu_img">
+          <image src="../../images/weix.png"></image>
+        </view>
+        <view>线下支付</view>
+      </view>
+      <radio value="3"></radio>
+    </view> -->
+  </radio-group>
+  <view class="bot" bindtap="submitbtn" wx:if="{{isShowOpst}}">
+    确认支付{{count_pick}}
+  </view>
+  <view class="bots" wx:else>
+    确认支付{{count_pick}}
+  </view>
+</view>
+<view class="Shouquan" wx:if="{{isSiuser}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    您还未授权请先授权！
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type="getUserInfo" bindgetuserinfo="getUserInfo">去授权 </button>
+  </view>
+  <!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view> -->
+</view>
+<view class="opsbjc" wx:if="{{isSiuser}}" bindtap="ggopfn">
+</view>
